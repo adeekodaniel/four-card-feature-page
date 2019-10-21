@@ -17,20 +17,21 @@ body {
   text-align: center;
   margin-top: 50px;
   padding-top: 2px;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
 }
 #header-heading {
-  font-weight: 200;
+  font-weight: 100;
   padding-top: 15px;
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 0px;
+  line-height: 1;
 }
 #next-heading {
   line-height: 1;
   font-size: 1.5rem;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 #para {
   color: darkgray;
@@ -59,7 +60,7 @@ body {
   overflow: hidden;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  height: 30vh;
+  height: 210px;
 }
 .supervisor {
   border-top: 5px solid hsl(180, 62%, 55%);
@@ -85,4 +86,45 @@ body {
   bottom: 16px;
   right: 16px;
   position: absolute;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(210,124,211,0.5);
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: #ffffff;
+    font-size: 1.5em;
+  }
+  .card {
+    max-width: 350px;
+  }
+  .main{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #ffffff;
+    font-size: 1.2em;
+  }
+  title-box {
+    margin-right: 5px;
+  }
+  #header-heading, #next-heading, #para {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #para {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .card {
+    max-width: 350px;
+  }
+  .main{
+    flex-direction: column;
+  }
 }
