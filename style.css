@@ -16,16 +16,21 @@ body {
 .title-box {
   text-align: center;
   margin-top: 50px;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-top: 2px;
+  width: 500px;
+  margin: 0 auto;
 }
 #header-heading {
   font-weight: 200;
-  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
 }
 #next-heading {
   line-height: 1;
   font-size: 1.5rem;
+  margin-top: 0px;
 }
 #para {
   color: darkgray;
@@ -77,6 +82,7 @@ body {
   font-size: 0.8rem;
 }
 .card img {
-  display: block;
-  float: right;
+  bottom: 16px;
+  right: 16px;
+  position: absolute;
 }
